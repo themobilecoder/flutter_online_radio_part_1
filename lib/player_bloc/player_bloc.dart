@@ -20,7 +20,7 @@ class PlayerBloc extends Bloc<PlayerEvent, PlayerState> {
     PlayerEvent event,
   ) async* {
     if (event is PlayEvent && state is! PlayingState) {
-      radioPlayer.play(url: 'https://stream-mz.planetradio.co.uk/planetrock.mp3');
+      radioPlayer.play(url: event.url);
       yield PlayingState();
     } else if (event is PauseEvent) {
       radioPlayer.pause();

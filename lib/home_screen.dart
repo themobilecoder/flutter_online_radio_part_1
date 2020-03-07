@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:online_radio/player_bloc/player_bloc.dart';
 
 class HomeScreen extends StatelessWidget {
+  final _planetRockUrl = 'https://stream-mz.planetradio.co.uk/planetrock.mp3';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,12 +23,13 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 height: 50,
                 width: 50,
-                child: Placeholder(
-                  color: Theme.of(context).accentColor,
-                ),
+                child: Image.asset('assets/images/planet_rock.png'),
               ),
             ),
-            Text('Radio 98.3 FM'),
+            Text(
+              'Planet Rock',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: BlocBuilder<PlayerBloc, PlayerState>(
@@ -39,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                         size: 32,
                       ),
                       onPressed: () {
-                        context.bloc<PlayerBloc>().add(PlayEvent());
+                        context.bloc<PlayerBloc>().add(PlayEvent(url: _planetRockUrl));
                       },
                     );
                   } else {
