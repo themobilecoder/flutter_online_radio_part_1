@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     final RadioPlayer radioPlayer = JustAudioPlayer();
     return MaterialApp(
       title: 'Online Radio',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       home: BlocProvider<PlayerBloc>(
         create: (context) => PlayerBloc(radioPlayer: radioPlayer),
