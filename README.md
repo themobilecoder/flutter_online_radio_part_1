@@ -1,12 +1,13 @@
-# online_radio_part_1
+# Radio App Tutorial Part 1
 
-This is the first part of the tutorial series: How to make an online radio app.
+<img src="res/online-radio-feature-image.png" width="500">
 
-## Getting Started
+### This is the source repository of the article: 
+## [Make a Radio App in Flutter - Part 1](https://themobilecoder.com/make-a-radio-app-in-flutter-part-1)
+### Preview:
+<img src="res/online_radio_1.gif" width="350">
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+### A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
