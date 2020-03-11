@@ -2,8 +2,8 @@
 
 <img src="res/online-radio-feature-image.png" width="500">
 
-### This is the source repository of the article: 
-## [Make a Radio App in Flutter - Part 1](https://themobilecoder.com/make-a-radio-app-in-flutter-part-1)
+### This is the source code used in the tutorial found [here](https://themobilecoder.com/make-a-radio-app-in-flutter-part-1) 
+
 ### Preview:
 <img src="res/online_radio_1.gif" width="350">
 
