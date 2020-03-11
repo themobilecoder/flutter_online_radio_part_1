@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:loading/indicator/line_scale_pulse_out_indicator.dart';
 import 'package:loading/loading.dart';
-import 'package:online_radio/player_bloc/player_bloc.dart';
 import 'package:online_radio/widgets/idle_dots.dart';
 
 import 'player_bloc/player_bloc.dart';
@@ -59,7 +58,6 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: BlocBuilder<PlayerBloc, PlayerState>(
-                bloc: BlocProvider.of<PlayerBloc>(context),
                 builder: (context, state) {
                   if (state is PausedState) {
                     return IconButton(
